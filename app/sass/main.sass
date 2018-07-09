@@ -1,0 +1,167 @@
+@import "reset"
+@import "fonts"
+@import "vars"
+
+body
+	font-family: $default-font
+	background: #f3f6f8
+	color: $default-color
+	overflow-x: hidden
+
+.container, .row
+	height: 100%
+
+.header
+	height: 60px
+	width: 100%
+	background: $blue-color
+	.search
+		text-align: right
+		position: relative
+		width: 100%
+		input
+			outline: none
+			width: 50%
+			height: 38px
+			background: #20256d
+			border: none;
+			border-radius: 5px
+			margin-top: 11px
+			padding: 0 10px
+			box-sizing: border-box
+			color: $default-color
+		span
+			position: absolute
+			right: 12px
+			top: 21px
+			width: 20px
+			height: 20px
+			display: block
+			z-index: 10
+			background-image: url('../img/search.png')
+			background-repeat: no-repeat
+			cursor: pointer
+			background-size: cover
+	.user-block 
+		height: 100%
+		display: flex
+		justify-content: flex-end
+		flex-direction: row
+		align-items: center
+		.user-mail
+			margin-left: 30px
+			cursor: pointer
+			img
+				height: 25px
+		.user-news
+			cursor: pointer
+			img
+				height: 25px
+		.user-info
+			display: flex
+			align-items: center
+			.u-avatar
+				display: flex
+				width: 52px
+				height: 52px
+				border: 2px solid $default-color
+				border-radius: 50%
+				overflow: hidden
+				margin-right: 30px
+				margin-left: 35px
+				img
+					width: 100%
+			.u-fullname
+				span
+					display: block
+					font-family: "DinProMedium"
+		.user-btn-more
+			margin-left: 75px
+			img
+				cursor: pointer
+			.user-dropdown-menu
+				width: 80px
+				position: absolute
+				right: 0px
+				top: 58px
+				background: $blue-color
+				display: none
+				z-index: 100
+				border: 2px solid #20256d
+				ul
+					li
+						display: block
+						cursor: pointer
+						padding: 7px 0
+						text-align: center
+						font-family: 'DinProBold'
+						transition: 1s
+						&:hover
+							background: #20256d
+							transition: 1s
+	
+nav
+	width: 215px
+	box-sizing: border-box
+	position: absolute
+	min-height: 300px
+	top: 60px
+	left: -170px
+	bottom: 0
+	background: $default-color
+	z-index: 9999
+	.nav-btn
+		height: 50px
+		position: relative
+		span
+			position: absolute
+			right: 14px
+			top: 19px
+			cursor: pointer
+			i
+				color: $blue-color
+	ul
+		li	
+			transition: 0.5s
+			position: relative
+			cursor: pointer
+			background: $default-color
+			color: #7175b5
+			&:hover
+				background: $blue-color
+				transition: 0.5s
+				span
+					i
+						color: $default-color
+				a
+					color: $default-color
+			a
+				display: block
+				padding: 20px 20px 20px 80px
+				color: #7175b5
+			span
+				position: absolute
+				top: 20px
+				left: 186px
+				i
+					color: $blue-color
+
+
+.scale-content
+	transform: translate3d(170px, 0px, 0px);
+
+.content
+	transition: 0.5s	
+	box-sizing: border-box
+	padding-top: 75px
+	color: #a7a9aa
+	h1
+		padding-bottom: 30px
+		font-size: 25px
+	p
+		line-height: 1.5
+		a
+			color: #2891fb
+
+
+@import 'media'

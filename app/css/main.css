@@ -1,0 +1,331 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+@font-face {
+  font-family: "DinProLight";
+  src: url("../fonts/DINPro-Light/DINPro-Light.eot");
+  src: url("../fonts/DINPro-Light/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Light/DINPro-Light.woff") format("woff"), url("../fonts/DINPro-Light/DINPro-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "DinProMedium";
+  src: url("../fonts/DINPro-Medium/DINPro-Medium.eot");
+  src: url("../fonts/DINPro-Medium/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Medium/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Mediumt/DINPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "DinProBold";
+  src: url("../fonts/DINPro-Bold/DINPro-Bold.eot");
+  src: url("../fonts/DINPro-Bold/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Bold/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold/DINPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUISemilight";
+  src: url("../fonts/SegoeUI-Semilight/SegoeUI-Semilight.eot");
+  src: url("../fonts/SegoeUI-Semilight/SegoeUI-Semilight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI-Semilight/SegoeUI-Semilight.woff") format("woff"), url("../fonts/SegoeUI-Semilight/SegoeUI-Semilight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("../fonts/ProximaNova-Thin/ProximaNovaT-Thin.eot");
+  src: url("../fonts/ProximaNova-Thin/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Thin/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNova-Thin/ProximaNovaT-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: "SegoeUISemilight", sans-serif;
+  background: #f3f6f8;
+  color: #fff;
+  overflow-x: hidden; }
+
+.container, .row {
+  height: 100%; }
+
+.header {
+  height: 60px;
+  width: 100%;
+  background: #3d439b; }
+  .header .search {
+    text-align: right;
+    position: relative;
+    width: 100%; }
+    .header .search input {
+      outline: none;
+      width: 50%;
+      height: 38px;
+      background: #20256d;
+      border: none;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      margin-top: 11px;
+      padding: 0 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      color: #fff; }
+    .header .search span {
+      position: absolute;
+      right: 12px;
+      top: 21px;
+      width: 20px;
+      height: 20px;
+      display: block;
+      z-index: 10;
+      background-image: url("../img/search.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      -webkit-background-size: cover;
+              background-size: cover; }
+  .header .user-block {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .user-block .user-mail {
+      margin-left: 30px;
+      cursor: pointer; }
+      .header .user-block .user-mail img {
+        height: 25px; }
+    .header .user-block .user-news {
+      cursor: pointer; }
+      .header .user-block .user-news img {
+        height: 25px; }
+    .header .user-block .user-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header .user-block .user-info .u-avatar {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 52px;
+        height: 52px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+        margin-left: 35px; }
+        .header .user-block .user-info .u-avatar img {
+          width: 100%; }
+      .header .user-block .user-info .u-fullname span {
+        display: block;
+        font-family: "DinProMedium"; }
+    .header .user-block .user-btn-more {
+      margin-left: 75px; }
+      .header .user-block .user-btn-more img {
+        cursor: pointer; }
+      .header .user-block .user-btn-more .user-dropdown-menu {
+        width: 80px;
+        position: absolute;
+        right: 0px;
+        top: 58px;
+        background: #3d439b;
+        display: none;
+        z-index: 100;
+        border: 2px solid #20256d; }
+        .header .user-block .user-btn-more .user-dropdown-menu ul li {
+          display: block;
+          cursor: pointer;
+          padding: 7px 0;
+          text-align: center;
+          font-family: 'DinProBold';
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s; }
+          .header .user-block .user-btn-more .user-dropdown-menu ul li:hover {
+            background: #20256d;
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s; }
+
+nav {
+  width: 215px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  min-height: 300px;
+  top: 60px;
+  left: -170px;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999; }
+  nav .nav-btn {
+    height: 50px;
+    position: relative; }
+    nav .nav-btn span {
+      position: absolute;
+      right: 14px;
+      top: 19px;
+      cursor: pointer; }
+      nav .nav-btn span i {
+        color: #3d439b; }
+  nav ul li {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    color: #7175b5; }
+    nav ul li:hover {
+      background: #3d439b;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+      nav ul li:hover span i {
+        color: #fff; }
+      nav ul li:hover a {
+        color: #fff; }
+    nav ul li a {
+      display: block;
+      padding: 20px 20px 20px 80px;
+      color: #7175b5; }
+    nav ul li span {
+      position: absolute;
+      top: 20px;
+      left: 186px; }
+      nav ul li span i {
+        color: #3d439b; }
+
+.scale-content {
+  -webkit-transform: translate3d(170px, 0px, 0px);
+          transform: translate3d(170px, 0px, 0px); }
+
+.content {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 75px;
+  color: #a7a9aa; }
+  .content h1 {
+    padding-bottom: 30px;
+    font-size: 25px; }
+  .content p {
+    line-height: 1.5; }
+    .content p a {
+      color: #2891fb; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 120px; }
+    .header .user-block {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header .user-block .user-mail {
+        margin-left: 0; }
+      .header .user-block .user-info .u-avatar {
+        margin-right: 10px;
+        margin-left: 0; }
+      .header .user-block .user-btn-more {
+        margin-left: 0; }
+    .header .search input {
+      width: 100%; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
